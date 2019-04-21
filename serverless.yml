@@ -23,7 +23,7 @@ provider:
 
 # you can overwrite defaults here
 #  stage: dev
-  region: "YOUR AWS REGION HERE"
+  region: YOUR REGION HERE
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -59,9 +59,8 @@ functions:
     handler: handler.testing
     events:
       - sqs: 
-        arn:'YOUR ARN HERE!'
-        batchSize:'NUM OF BATCHSIZE HERE (INT)'
-
+          arn: YOUR ARN HERE
+          batchSize: YOUR BATCHSIZE HERE
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
